@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Longo Jewellery</title>
+	<link rel="stylesheet" href="../css/stylesheetfind.css">
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet">
+</head>
+<body>
+<nav class="menu">
+    <a href="../index.html"><img id="logo" alt="Longo Jewellery Logo" src="../images/logo.jpg" height="50" width="180"></a>
+    <ul class="clearfix">
+        <li><a href="../jewellerybasics/jewellerybasics.html">Engagement Ring Basics</a>
+            <ul class="submenu">
+                <li><a href="../jewellerybasics/diamonds.html">Diamonds</a></li>
+                <li><a href="../jewellerybasics/metals.html">Precious Metals</a></li>
+                <li><a href="../jewellerybasics/styles.html">Ring Styles</a></li>
+            </ul>
+        </li>
+        <li><a href="../shop/shop.html">Gallery</a></li>
+        <li><a href="../customdesign/customdesign.html">Custom Design</a></li>
+        <li><a href="../blog/blog.html">Blog</a></li>
+        <li><a href="findus.html">Contact Us</a>
+            <ul class="submenu">
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="findus.html">Find Us</a></li>
+            </ul>
+        </li>
+    </ul>
+    </nav>
+<header>
+    <h1>Find Us In Store</h1>
+    </header>
+<div id="currentlocation">
+    <a href="../index.html">Home</a> > <a href="findus.html">Find Us</a>
+    </div>
+<main>
+    <div id="content">
+        <div id="address">
+            <h3>Address</h3>
+            <p>Longo Jewellery <br>1245-4380 No. 3 Rd,<br> Richmond, BC<br> V6X 3V7</p>
+            <p>Come find us in person at our store inside of Parker Place in Richmond. We are steps away from the food court near the security office.</p>
+            <p>Interested to learn more about us? Visit our <a href="aboutus.html">about us</a> page.</p>
+            </div>
+        <div id="hours">
+            <h3>Store Hours</h3>
+            <p>Open 7 days a week from 12pm-6pm.</p>
+            </div>
+        </div>
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var uluru = {lat: 49.1817, lng: -123.1354};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 15,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAeP8B7ZrduFJ4N7RoCM2LykXCeGSaQ03s&callback=initMap">
+    </script>
+    </main>
+<footer>
+    <div id="footer1">
+        <h3>Customer Service</h3><br>
+        <a href="tel:16042703319">Call Us: (604) 270-3319</a><br>
+        <a href="mailto:jon_wong1@hotmail.com">Email Us: jon_wong1@hotmail.com</a><br>
+        <a href="../sitemap.html">Site Map</a>
+        </div>
+    <div id="footer2">
+        <h3>Our Store</h3><br>
+        <a href="aboutus.html">About Us</a><br>
+        <a href="findus.html">Come Talk to Us</a>
+        </div>
+    </footer>

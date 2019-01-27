@@ -1,0 +1,172 @@
+body {
+    width: 90%;
+    margin: auto;
+    min-width: 60em;
+    max-width: 66em;
+    font-family: 'EB Garamond', serif;
+}
+nav {position:relative;
+}
+nav > ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    border-top: solid 0.1em #636363;
+    border-bottom: solid 0.1em #636363;
+    padding:0;
+    font-size: 1.2em;
+    margin-left: 19%;
+}
+#logo {
+    position: absolute;
+    top:0;
+}
+nav ul a {
+    text-decoration: none;
+}
+nav ul li {
+    display: block;
+    margin-right: 2.5em;
+    margin-left: 2.5em;
+}
+nav ul li:hover {
+    font-weight: bold;
+}
+.clearfix:after {
+    display:block;
+    clear:both;
+}
+.menu li {
+    margin:0;
+    list-style-type:none;
+}
+.menu a {
+    transition:all linear 0.15s;
+    color:black;
+}
+.menu > ul > li {
+    float:left;
+    display:inline-block;
+    position:relative;
+}
+.menu > ul > li > a {
+    padding:0.1em 1em;
+    display:inline-block;
+}
+.menu > ul > li:hover > a, .menu > ul > .current-item > a {
+    background:#d9dce0;
+}
+.menu li:hover .submenu {
+    z-index:1;
+    opacity:1;
+}
+.submenu {
+    width:100%;
+    padding:0;
+    position:absolute;
+    top:100%;
+    left:0;
+    z-index:-1;
+    opacity:0;
+    transition:opacity linear 0.15s;
+    background:white;
+    border-top: solid 0.1em #636363;
+    border-bottom: solid 0.1em #636363;
+}
+.submenu li {
+    display:block;
+    font-size:0.9em;
+    margin: 0.5em 0;
+}
+.submenu li a {
+    padding:0.1em 1em;
+    display:block;
+}
+.submenu li a:hover, .submenu .current-item a {
+    background:#d9dce0;
+}
+#currentlocation {
+    margin-top: 0;
+    margin-bottom: 2em;
+}
+#currentlocation a {
+    text-decoration: none;
+    color:black;
+}
+header {
+    text-align: center;
+    font-size: 2em;
+    border-bottom: solid 0.2em #636363;
+}
+#content {
+    float:left; 
+    width: 40%;
+    font-size: 1.1em;
+}
+#content h3 {
+    text-decoration: underline;
+}
+#hours {
+    margin-top: 3em;   
+}
+#map {
+    width: 50%;
+    height: 25em;
+    background-color: grey;
+    float: right;
+    margin-bottom: 2em;
+}
+.floatright {
+    float: right;
+    width: 48%;
+    padding-top: 10%;
+}
+.floatleft {
+    float: left;
+    width: 48%;
+}
+.floatleft ul {
+    margin-bottom: 8%;
+}
+#storeimg {
+    width: 100%;
+    height: auto;
+}
+#aboutuscontent {
+    margin-bottom: 5%;
+}
+#storeimg {
+  
+}
+main {
+    padding-bottom: 3%;
+    font-size: 1.1em;
+    margin: 0 5%;
+}
+footer {
+    margin-bottom: 15%;
+    border-top: solid 0.3em #636363;
+    clear:both;
+    font-size: 1.1em;
+}
+footer h3 {
+    margin-top: 0;
+    margin-bottom: 0.1em;
+}
+footer a {
+    border-bottom: 1px solid black;
+    text-decoration: none;
+    padding-bottom: 0.05em;
+    color: black;
+}
+footer a:hover {
+    text-decoration: none;
+    border-bottom: none;
+    color: grey;
+}
+#footer1 {
+    float: left; 
+}
+#footer2 {
+    float: right;   
+}

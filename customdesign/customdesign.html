@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Longo Jewellery</title>
+	<link rel="stylesheet" href="../css/stylesheetdesign.css">
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet">
+    <script>
+            function checkform()
+                {
+                    if(document.contactform.customername.value == "")
+                    {
+                    alert("Please enter your name.")
+                    document.getElementById("name").className="showit"; return false;
+                    }
+                    if(document.contactform.customertel.value == "")
+                    {
+                    alert("Please enter your telephone number.")
+                    document.getElementById("telephone").className="showit"; return false;
+                    }
+                     if(/^[A-Za-z]+$/.test(document.contactform.customertel.value))
+                    {
+                    alert("Please re-enter your telephone number.")
+                    document.getElementById("telephone").className="showit"; return false;
+                    }
+                    if(document.contactform.customeremail.value == "")
+                    {
+                    alert("Please enter your email address.")
+                    document.getElementById("email").className="showit"; return false;
+                    }
+                    if(document.contactform.designdescription.value == "")
+                    {
+                    alert("Please enter a description")
+                    document.getElementById("designdescription").className="showit"; return false;
+                    }
+                }
+        </script>
+</head>
+<body>
+<nav class="menu">
+    <a href="../index.html"><img id="logo" alt="Longo Jewellery Logo" src="../images/logo.jpg" height="50" width="180"></a>
+    <ul class="clearfix">
+        <li><a href="../jewellerybasics/jewellerybasics.html">Engagement Ring Basics</a>
+            <ul class="submenu">
+                <li><a href="../jewellerybasics/diamonds.html">Diamonds</a></li>
+                <li><a href="../jewellerybasics/metals.html">Precious Metals</a></li>
+                <li><a href="../jewellerybasics/styles.html">Ring Styles</a></li>
+            </ul>
+        </li>
+        <li><a href="../shop/shop.html">Gallery</a></li>
+        <li><a href="../customdesign/customdesign.html">Custom Design</a></li>
+        <li><a href="../blog/blog.html">Blog</a></li>
+        <li><a class="pageend" href="../findus/findus.html">Contact Us</a>
+            <ul class="submenu">
+                <li><a href="../findus/aboutus.html">About Us</a></li>
+                <li><a href="../findus/findus.html">Find Us</a></li>
+            </ul>
+        </li>
+    </ul>
+    </nav>
+    <header>
+    <h1>Custom Design</h1>
+    </header>
+<div id="currentlocation">
+    <a href="../index.html">Home</a> > <a href="customdesign.html">Custom Design Form</a>
+    </div>
+<main>
+    <p>Please complete the form below and we will get back soon.</p>
+    <p>Provide as much infrmation as possible to get the most accurate estimate for your design. </p>
+    <form method="post" name="contactform" onsubmit="return checkform()" action="formmail.php">
+        <input type="hidden" name="recipients" id="recipient" value="jonwong32@gmail.com" />
+        <input type="hidden" name="subject" id="subject" value="Custom Design Form" />
+        <input type="hidden" name="good_url" id="redirect" value="submissionthanks.html" />
+        <label for="customername">Name:</label>
+        <input type="text" name="customername" id="customername">
+        <span id="name" class="hideit">*</span>
+        <br>
+        <label for="customertel">Telephone #:</label> 
+        <input type="tel" name="customertel" id="customertel">
+        <span id="telephone" class="hideit">*</span>
+        <br>
+        <label for="customeremail">E-mail:</label>
+        <input type="email" name="customeremail" id="customeremail">
+        <span id="email" class="hideit">*</span>
+        <br>
+        <label for="designdescription">Description (include items such as desired precious metal; gemstone type, size, and specs; how to set gemstones; ring size; anything particular; etc.): </label>
+        <textarea name="designdescription" id="designdescription" rows="15" cols="50" required></textarea><br>
+        <label>FinFUpload Sketches or Drawings:</label>
+        &nbsp; Feature Coming Soon<br>
+        <input id="submitbutton" type="submit" value="submit">
+       
+    </form>
+    </main>
+<footer>
+    <div id="footer1">
+        <h3>Customer Service</h3><br>
+        <a href="tel:16042703319">Call Us: (604) 270-3319</a><br>
+        <a href="mailto:jon_wong1@hotmail.com">Email Us: jon_wong1@hotmail.com</a><br>
+        <a href="../sitemap.html">Site Map</a>
+        </div>
+    <div id="footer2">
+        <h3>Our Store</h3><br>
+        <a href="../findus/aboutus.html">About Us</a><br>
+        <a href="../findus/findus.html">Come Talk to Us</a>
+        </div>
+    </footer>

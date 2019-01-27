@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Longo Jewellery</title>
+	<link rel="stylesheet" href="../css/stylesheetshop.css">
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet">
+
+</head>
+<body>
+<nav class="menu">
+    <a href="../index.html"><img id="logo" alt="Longo Jewellery Logo" src="../images/logo.jpg" height="50" width="180"></a>
+    <ul class="clearfix">
+        <li><a href="../jewellerybasics/jewellerybasics.html">Engagement Ring Basics</a>
+            <ul class="submenu">
+                <li><a href="../jewellerybasics/diamonds.html">Diamonds</a></li>
+                <li><a href="../jewellerybasics/metals.html">Precious Metals</a></li>
+                <li><a href="../jewellerybasics/styles.html">Ring Styles</a></li>
+            </ul>
+        </li>
+        <li><a href="shop.html">Gallery</a></li>
+        <li><a href="../customdesign/customdesign.html">Custom Design</a></li>
+        <li><a href="../blog/blog.html">Blog</a></li>
+        <li><a href="../findus/findus.html">Contact Us</a>
+            <ul class="submenu">
+                <li><a href="../findus/aboutus.html">About Us</a></li>
+                <li><a href="../findus/findus.html">Find Us</a></li>
+            </ul>
+        </li>
+    </ul>
+    </nav>  
+   
+<header>
+    <h1>Gallery</h1>
+    </header>
+<div id="currentlocation">
+    <a href="../index.html">Home</a> > <a href="shop.html">Gallery</a>
+    </div>
+<main>
+    <p>Take a look at a few of our example rings below. Come visit us in store to take a look at them in person and to get the prices.</p>
+    <div class="row">
+        <div class="column">
+            <img src="../images/shop/shopring1s.png" alt="solitaire ring" onclick="openModal();currentSlide(1)" class="hovershadow">
+        </div>
+        <div class="column">
+            <img src="../images/shop/shopring2s.png" alt="channel set ring" onclick="openModal();currentSlide(2)" class="hovershadow">
+        </div>
+        <div class="column">
+            <img src="../images/shop/shopring3s.png" alt="pave set ring" onclick="openModal();currentSlide(3)" class="hovershadow">
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <img src="../images/shop/shopring4s.png" alt="half-circle micropave ring" onclick="openModal();currentSlide(4)" class="hovershadow">
+        </div>
+        <div class="column">
+            <img src="../images/shop/shopring5s.png" alt="French pave set ring" onclick="openModal();currentSlide(5)" class="hovershadow">
+        </div>
+        <div class="column">
+            <img src="../images/shop/shopring6s.png" alt="twisted vine set ring" onclick="openModal();currentSlide(6)" class="hovershadow">
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <img src="../images/shop/shopring7s.png" alt="halo set ring" onclick="openModal();currentSlide(7)" class="hovershadow">
+        </div>
+        <div class="column">
+            <img src="../images/shop/shopring8s.png" alt="classic six prong solitaire set ring" onclick="openModal();currentSlide(8)" class="hovershadow">
+        </div>
+        <div class="column">
+            <img src="../images/shop/shopring9s.png" alt="halo set rose gold ring" onclick="openModal();currentSlide(9)" class="hovershadow">
+        </div>
+    </div>
+    <div id="mymodal" class="modal">
+        <div class="modalcontent">
+            <div class="slides">
+                <div class="imgnumber">1/9</div>
+                <img src="../images/shop/shopring1.png" style="width:100%" alt="solitaire ring">
+            </div>
+            <div class="slides">
+                <div class="imgnumber">2/9</div>
+                <img src="../images/shop/shopring2.png" style="width:100%" alt="channel set ring">
+            </div>
+            <div class="slides">
+                <div class="imgnumber">3/9</div>
+                <img src="../images/shop/shopring3.png" style="width:100%" alt="pave set ring">
+            </div>
+            <div class="slides">
+                <div class="imgnumber">4/9</div>
+                <img src="../images/shop/shopring4.png" style="width:100%" alt="half-circle micropave ring">
+            </div>
+            <div class="slides">
+                <div class="imgnumber">5/9</div>
+                <img src="../images/shop/shopring5.png" style="width:100%" alt="French pave set ring">
+            </div>
+            <div class="slides">
+                <div class="imgnumber">6/9</div>
+                <img src="../images/shop/shopring6.png" style="width:100%" alt="twisted vine set ring">
+            </div>
+            <div class="slides">
+                <div class="imgnumber">7/9</div>
+                <img src="../images/shop/shopring7.png" style="width:100%" alt="halo set ring">
+            </div>
+            <div class="slides">
+                <div class="imgnumber">8/9</div>
+                <img src="../images/shop/shopring8.png" style="width:100%" alt="classic six prong solitaire set ring">
+            </div>
+            <div class="slides">
+                <div class="imgnumber">9/9</div>
+                <img src="../images/shop/shopring9.png" style="width:100%" alt="halo set rose gold ring">
+            </div>
+        <a class="previous" onclick="plusSlides(-1)">&#10094;</a> 
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <span class="closecursor" onclick="closeModal()">&times;</span>
+        <div class="captioncontainer">
+            <p id="caption"></p>
+            </div>
+        <div class="column">
+            <img class="demo" src="../images/shop/shopring1s.png" onclick="currentSlide(1)" alt="Classic Platinum Solitaire Ring with 1.00ct Diamond.">
+            </div>
+        <div class="column">
+            <img class="demo" src="../images/shop/shopring2s.png" onclick="currentSlide(2)" alt="14K White Gold Channel Set Ring (0.25ctw) with 1.00ct Diamond.">
+            </div>
+        <div class="column">
+            <img class="demo" src="../images/shop/shopring3s.png" onclick="currentSlide(3)" alt="Three Pavé Set Round Diamonds (0.25ctw) Flanking 1.00ct Center Diamond on a Platiunum Band.">
+            </div>
+        <div class="column">
+            <img class="demo" src="../images/shop/shopring4s.png" onclick="currentSlide(4)" alt="Half Circle Micropavé Set Diamonds (0.1ctw) Complimenting 1.00ct Center Diamond on a Platinum Band.">
+            </div>
+        <div class="column">
+            <img class="demo" src="../images/shop/shopring5s.png" onclick="currentSlide(5)" alt="French Pavé Set Halo Diamond Ring (0.5ctw) with a 1.00ct Centre Diamond on Platinum Band.">
+            </div>
+        <div class="column">
+            <img class="demo" src="../images/shop/shopring6s.png" onclick="currentSlide(6)" alt="Pavé Set Diamonds Intertwined with a Ribbon of 14K White Gold with a 1.00ct Center Diamond on a 14K White Gold Band.">
+            </div>
+        <div class="column">
+            <img class="demo" src="../images/shop/shopring7s.png" onclick="currentSlide(7)" alt="French Pavé Set Halo Diamond Ring (0.5ctw) with a 1.00ct Centre Diamond on a 14K Yellow Gold Band.">
+            </div>
+        <div class="column">
+            <img class="demo" src="../images/shop/shopring8s.png" onclick="currentSlide(8)" alt="Classic Six Prong Solitaire Ring with 1.00ct Center Diamond on a 18K Yellow Gold Band.">
+            </div>
+         <div class="column">
+            <img class="demo" src="../images/shop/shopring9s.png" onclick="currentSlide(9)" alt="French Pavé Set Halo Diamond Ring (0.5ctw) with a 1.00ct Centre Diamond on a 14K Rose Gold Band.">
+            </div>
+        </div>     
+    </div>   
+    </main>
+<script>
+        function openModal() {
+            document.getElementById("mymodal").style.display = "block";
+        }
+
+        function closeModal() {
+            document.getElementById("mymodal").style.display = "none";
+        }
+
+        var slideIndex = 1;
+            showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("slides");
+          var dots = document.getElementsByClassName("demo");
+          var captionText = document.getElementById("caption");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display="block";
+          dots[slideIndex-1].className += " active";
+          captionText.innerHTML = dots[slideIndex-1].alt;
+        }
+</script>
+<footer>
+    <div id="footer1">
+        <h3>Customer Service</h3><br>
+        <a href="tel:16042703319">Call Us: (604) 270-3319</a><br>
+        <a href="mailto:jon_wong1@hotmail.com">Email Us: jon_wong1@hotmail.com</a><br>
+        <a href="../sitemap.html">Site Map</a>
+        </div>
+    <div id="footer2">
+        <h3>Our Store</h3><br>
+        <a href="../findus/aboutus.html">About Us</a><br>
+        <a href="../findus/findus.html">Come Talk to Us</a>
+        </div>
+    </footer>

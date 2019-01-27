@@ -1,0 +1,224 @@
+body {
+    width: 90%;
+    margin: auto;
+    min-width: 60em;
+    max-width: 66em;
+    font-family: 'EB Garamond', serif;
+}
+nav {position:relative;
+}
+nav > ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    border-top: solid 0.1em #636363;
+    border-bottom: solid 0.1em #636363;
+    padding:0;
+    font-size: 1.2em;
+    margin-left: 19%;
+}
+#logo {
+    position: absolute;
+    top:0;
+}
+nav ul a {
+    text-decoration: none;
+}
+nav ul li {
+    display: block;
+    margin-right: 2.5em;
+    margin-left: 2.5em;
+}
+nav ul li:hover {
+    font-weight: bold;
+}
+.clearfix:after {
+    display:block;
+    clear:both;
+}
+.menu li {
+    margin:0;
+    list-style-type:none;
+}
+.menu a {
+    transition:all linear 0.15s;
+    color:black;
+}
+.menu > ul > li {
+    float:left;
+    display:inline-block;
+    position:relative;
+}
+.menu > ul > li > a {
+    padding:0.1em 1em;
+    display:inline-block;
+}
+.menu > ul > li:hover > a, .menu > ul > .current-item > a {
+    background:#d9dce0;
+}
+.menu li:hover .submenu {
+    z-index:1;
+    opacity:1;
+}
+.submenu {
+    width:100%;
+    padding:0;
+    position:absolute;
+    top:100%;
+    left:0;
+    z-index:-1;
+    opacity:0;
+    transition:opacity linear 0.15s;
+    background:white;
+    border-top: solid 0.1em #636363;
+    border-bottom: solid 0.1em #636363;
+}
+.submenu li {
+    display:block;
+    font-size:0.9em;
+    margin: 0.5em 0;
+}
+.submenu li a {
+    padding:0.1em 1em;
+    display:block;
+}
+.submenu li a:hover, .submenu .current-item a {
+    background:#d9dce0;
+}
+#currentlocation {
+    margin-top: 0;   
+}
+#currentlocation a {
+    text-decoration: none;
+    color:black;
+}
+header {
+    text-align: center;
+    font-size: 2em;
+    border-bottom: solid 0.2em #636363;
+}
+#pagenav {position:relative;
+}
+#pagenav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.1em 0;
+    font-size: 0.7em;
+}
+#pagenav ul a {
+    text-decoration: none;
+    color:black;
+}
+#pagenav li {
+    display: block;
+    margin-right: 2.5em;
+    margin-left: 2.5em;
+}
+#pagenav ul li:hover {
+    font-weight: bold;
+}
+main {
+    margin: 0 5%;
+    font-size: 1.1em;
+}
+main p {
+    margin: 0 5%;
+}
+table {
+    margin-left: 15%; 
+    margin-top: 5%;
+    border-spacing: 0;
+}
+table th:first-child,td:first-child {
+    border-right: solid 0.1em black; 
+}
+table th{
+    border-bottom: solid 0.1em black; 
+}
+table td, th { 
+    padding: 2%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.metal {
+    position: relative;
+    width: 90%;
+    margin:auto;
+    left:17%;
+}
+.metalimg {
+    width: 33%;
+    height: auto;
+}
+.metaldes {
+    position:absolute;
+    left: 0;
+    top: -700%;
+    width: 100%;
+    text-align: center;
+    font-size: 200%;
+    text-decoration: none;
+    color:black;
+    visibility: hidden;
+    opacity: 0;
+}
+.metal:hover img {
+    opacity: 0.6;   
+}
+.metal:hover .metaldes {
+    visibility: visible;
+    opacity: 1;
+}
+#topmetalimg {
+    margin-top: 5%   
+}
+.imgright, .imgleft {
+    clear:both; 
+    padding-bottom: 15%;
+}
+.imgrightdes {
+    float: left;
+    width: 75%;
+}
+.imgrightimg {
+    float: right;   
+}
+.imgleftdes {
+    float: right;
+    width:75%;
+}
+.imgleftimg {
+    float:left;  
+}
+main {
+    padding-bottom: 3%;
+    margin-bottom: 3%;
+}
+footer {
+    margin-bottom: 15%;
+    border-top: solid .3em #636363;
+    clear:both;
+    font-size: 1.1em;
+}
+footer h3 {
+    margin-top: 0;
+    margin-bottom: 0.1em;
+}
+footer a {
+    border-bottom: 1px solid black;
+    text-decoration: none;
+    padding-bottom: 0.05em;
+    color: black;
+}
+footer a:hover {
+    text-decoration: none;
+    border-bottom: none;
+    color: grey;
+}
+#footer1 {
+    float: left; 
+}
+#footer2 {
+    float: right;   
+}
