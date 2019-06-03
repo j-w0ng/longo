@@ -2,7 +2,7 @@
 
 Jewellery Store Website:
 
-    - HTML5/CSS
-    
-    - FormMail PHP script from Tectite.com
+- HTML5/CSS
+
+- FormMail PHP script from Tectite.com
     
